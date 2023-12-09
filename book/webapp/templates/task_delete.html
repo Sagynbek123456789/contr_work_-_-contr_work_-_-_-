@@ -9,8 +9,6 @@
         {% csrf_token %}
         <button type="submit" class="btn btn-primary mb-2">Yes</button>
     </form>
-{#    <button type="button" class="btn btn-primary">Yes</button>#}
-{#    <a href="{% url 'task_view' pk=task.pk %}">No</a>#}
         <a href="{% url 'task_view' pk=task.pk %}" class="btn btn-primary">No</a>
 {% endblock %}
 
